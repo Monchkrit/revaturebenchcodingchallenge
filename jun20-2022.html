@@ -1,0 +1,17 @@
+<script>
+  // A Simple Method to count squares
+  //between a and b
+   
+  function countSquares(a, b)
+  {
+     return (Math.floor(Math.sqrt(b)) -  Math.ceil(Math.sqrt(a)) + 1);
+  }
+   
+  // Driver code
+   
+      let startNumber = 1;
+      let endNumber = 1000000000;
+      document.write( "Count of squares is ",
+                countSquares(startNumber, endNumber));
+   
+  </script>
