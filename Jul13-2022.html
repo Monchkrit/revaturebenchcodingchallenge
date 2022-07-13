@@ -1,0 +1,34 @@
+<script>
+  // A Simple Method to count letters in arrays
+  // and figure out which letter shows up most.
+   
+  function letterCounter(letterArray, letter)
+  {
+    let arrayMap = new Map();
+    letterArray.forEach(item => {
+      item.forEach(let => {
+        let count = arrayMap.get(let);
+        console.log('let item: and count ' , let, ' ' , count);
+        if (count > 0) {
+          arrayMap.set(let, count + 1);
+        }
+        else {
+          arrayMap.set(let, 1);
+        }
+      });      
+    });
+    console.log("The arrayMap is: " , arrayMap);
+    
+     return
+  }
+   
+  // Driver code
+
+  letterCounter
+  ([ ["D", "E", "Y", "H", "A", "D"],
+["C", "B", "Z", "Y", "J", "K"],
+["D", "B", "C", "A", "M", "N"],
+["F", "G", "G", "R", "S", "R"],
+["V", "X", "H", "A", "S", "S"]], "H");
+   
+  </script>
