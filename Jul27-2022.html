@@ -1,0 +1,26 @@
+<script>
+  // A function that can work on numbers and find out if they are oddish or evenish
+  function oddishOrEvenish(input) {
+    let numbIn = input;    
+    let arrayTotal = 0;
+    let evenish = false;
+    let oddish = false;
+    let digArray = Array.from(String(numbIn), Number);
+    let size = digArray.length;
+    for (let i = 0; i < size; i++) {
+      arrayTotal = arrayTotal + digArray[i];
+    }
+    if (arrayTotal % 2 === 0) {
+      this.evenish = true;
+      console.log('It is evenish');
+    }
+    else {
+      this.oddish = true;
+      console.log('It is oddish');
+    }
+  }
+
+  oddishOrEvenish(43);
+  oddishOrEvenish(373);
+  oddishOrEvenish(4433);
+</script>
